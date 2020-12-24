@@ -50,8 +50,7 @@ const getQuote = async () => {
   const apiUrl = "https://type.fit/api/quotes";
 
   try {
-    // const response = await fetch(apiUrl);
-    const response = await fetch("/quotes.json");
+    const response = await fetch(apiUrl);
     apiQuotes = await response.json();
     newQuote();
   } catch (error) {
